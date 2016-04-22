@@ -5,7 +5,7 @@
             <td>ID Transaksi</td>
             <td>Tanggal Pinjam</td>
             <td>Tanggal Kembali</td>
-            <td>Nis</td>
+            <td>NIM</td>
         </tr>
     </thead>
     <?php $no=0; foreach($lap as $row): $no++;?>

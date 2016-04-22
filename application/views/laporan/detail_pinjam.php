@@ -16,7 +16,7 @@
     </div>
     
     <div class="form-group">
-        <label class="col-lg-5">NIS</label>
+        <label class="col-lg-5">NIM</label>
         <div class="col-lg-5">
             : <?php echo $pinjam['nis'];?>
         </div>

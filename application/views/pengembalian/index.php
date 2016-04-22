@@ -154,20 +154,20 @@
             
             <div class="col-md-6">
                 <div class="form-group">
-                    <label class="col-lg-4 control-label">Nis</label>
+                    <label class="col-lg-4 control-label">NIM</label>
                     <div class="col-lg-7">
                         <input type="text" name="nis" id="nis" class="form-control" readonly="readonly">
                     </div>
                 </div>
                 
                 <div class="form-group">
-                    <label class="col-lg-4 control-label">Nama</label>
+                    <label class="col-lg-4 control-label">Nama Mahasiswa</label>
                     <div class="col-lg-7">
                         <input type="text" name="nama" id="nama" class="form-control" readonly="readonly">
                     </div>
                 </div>
                 
-                <div class="form-group">
+                <!--<div class="form-group">
                     <label class="col-lg-4 control-label">Denda</label>
                     <div class="col-lg-7">
                         <select name="denda" id="denda" class="form-control">
@@ -183,7 +183,7 @@
                     <div class="col-lg-7">
                         <input type="text" name="nominal" id="nominal" class="form-control">
                     </div>
-                </div>
+                </div>-->
             </div>
         </form>
     

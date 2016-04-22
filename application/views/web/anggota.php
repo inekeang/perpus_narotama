@@ -33,6 +33,7 @@
                     <ul class="nav navbar-nav">
                         <li><a href="<?php echo site_url('web');?>"><i class="glyphicon glyphicon-home"></i> Home</a></li>
                         <li class="active"><a href="<?php echo site_url('web/anggota');?>"><i class="glyphicon glyphicon-user"></i> Anggota</a></li>
+                        
                     </ul>
                     <div class="nav navbar-nav navbar-right">
                         <form class="navbar-form navbar-left" role="search" action="<?php echo site_url('web/cari_anggota');?>" method="post">

@@ -1,7 +1,7 @@
 <!doctype html>
     <html>
         <head>
-            <title>Perpustakaan</title>
+            <title>Perpustakaan Unnar</title>
             <link href="<?php echo base_url('assets/css/bootstrap.min.css');?>" rel="stylesheet">
             <link href="<?php echo base_url('assets/font-awesome/css/font-awesome.css');?>" rel="stylesheet">
         
@@ -19,37 +19,8 @@
         <body>
             <!--<img src="<?php echo base_url('assets/img/3.jpg');?>" height="140px" width="100%">-->
             <!-- Static navbar -->
-            <div class="navbar navbar-default">
-                <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="<?php echo site_url('web');?>">Perpustakaan</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="<?php echo site_url('web');?>"><i class="glyphicon glyphicon-home"></i> Home</a></li>
-                        <li><a href="<?php echo site_url('web/anggota');?>"><i class="glyphicon glyphicon-user"></i> Anggota</a></li>
-                    </ul>
-                    <div class="nav navbar-nav navbar-right">
-                        <form class="navbar-form navbar-left" role="search" action="<?php echo site_url('web/cari_buku');?>" method="post">
-                            <div class="form-group">
-                                <input type="text" name="cari" class="form-control" placeholder="Cari Buku">
-                            </div>
-                            <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i> Cari</button>
-                        </form>
-                    </div>
-                </div><!--/.nav-collapse -->
-                </div>
-            </div>
-
-            
-            
-            
-            
+            <?php include "menu.php"; ?>
+                        
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
@@ -100,7 +71,8 @@
                         </div>
                     </div>
                     <div class="col-md-8 ">
-                        <legend>Selamat Datang di Apliasi Perpusatakaan</legend>
+                        <legend>Selamat Datang di Aplikasi Perpusatakaan Universitas Narotama</legend>
+                        <p><br>Perpustakaan Universitas Narotama berdiri bersamaan dengan berdirinya lembaga Universitas yaitu pada bulan februari tahun 1981 yang berlokasi di jalan Pahlawan No.30 Surabaya, dan pada tahun 1985 telah menempati gedung baru yang berlokasi di jalan Arief Rachman Hakim No. 51 Surabaya.60117 Sejak pindah ke kampus yang baru perpustakaan telah mengalami beberapa kali pindah ruangan hal ini disebabkan kurang layaknya suatu perpustakaan. Maka karena dianggap masih kurang layak pada awal tahun 2002 perpustakaan telah menempati gedung yang baru yaitu di lantai 2 gedung lantai 7 dengan luas kira-kira 95 m2.</p>
                     </div>
                 </div>
             </div>

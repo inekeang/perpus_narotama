@@ -1,7 +1,7 @@
 <!doctype html>
     <html>
         <head>
-            <title>Perpustakaan</title>
+            <title>Perpustakaan Unnar</title>
             <link href="<?php echo base_url('assets/css/bootstrap.min.css');?>" rel="stylesheet">
             <link href="<?php echo base_url('assets/font-awesome/css/font-awesome.css');?>" rel="stylesheet">
         
@@ -19,75 +19,58 @@
         <body>
             <!--<img src="<?php echo base_url('assets/img/3.jpg');?>" height="140px" width="100%">-->
             <!-- Static navbar -->
-            <div class="navbar navbar-default">
-                <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="<?php echo site_url('web');?>">Perpustakaan</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="<?php echo site_url('web');?>"><i class="glyphicon glyphicon-home"></i> Home</a></li>
-                        <li><a href="<?php echo site_url('web/anggota');?>"><i class="glyphicon glyphicon-user"></i> Anggota</a></li>
-                    </ul>
-                    <div class="nav navbar-nav navbar-right">
-                        <form class="navbar-form navbar-left" role="search" action="<?php echo site_url('web/cari_buku');?>" method="post">
-                            <div class="form-group">
-                                <input type="text" name="cari" class="form-control" placeholder="Cari Buku">
-                            </div>
-                            <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i> Cari</button>
-                        </form>
-                    </div>
-                </div><!--/.nav-collapse -->
-                </div>
-            </div>
+            <?php include "menu.php"; ?>
 
-            
-            
-            
-            
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <span class="glyphicon glyphicon-lock"></span> Login
+                                <span class="glyphicon glyphicon-lock"></span> Pencarian Buku
                             </div>
                             <div class="panel-body">
-                                <form class="form-horizontal" role="form" action="<?php echo site_url('web/proses');?>" method="post">
+                                <form class="navbar-form navbar-left" role="search" action="<?php echo site_url('web/cari_buku');?>" method="post">
                                     <?php echo $this->session->flashdata('message');?>
                                     <div class="form-group">
                                         <label for="inputEmail3" class="col-sm-3 control-label">
-                                            Username</label>
+                                            Judul</label>
                                         <div class="col-sm-9">
-                                            <input type="text" name="username" class="form-control" id="inputEmail3" placeholder="Username" required>
+                                            <!--<input type="text" name="cari" class="form-control" placeholder="Cari Buku">-->
+                                            <input type="text" name="cari" class="form-control" id="inputEmail3" placeholder="Judul">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-3 control-label">
+                                            Kategori</label>
+                                        <div class="col-sm-9">
+                                            <!--<input type="text" name="kategori" class="form-control" id="inputEmail3" placeholder="Kategori">-->
+                                            <select name="pengarang" class="form-control" id="inputEmail3" placeholder="Pengarang">
+                                                <option>IT</option>
+                                                <option>Ekonomi</option>
+                                                <option>Hukum</option>
+                                                <option>Sipil</option>
+                                                <option>Jurnal/Skripsi</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-3 control-label">
+                                            Pengarang</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" name="pengarang" class="form-control" id="inputEmail3" placeholder="Pengarang">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="inputPassword3" class="col-sm-3 control-label">
-                                            Password</label>
+                                            Penerbit</label>
                                         <div class="col-sm-9">
-                                            <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="Password" required>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-sm-offset-3 col-sm-9">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox"/>
-                                                    Remember me
-                                                </label>
-                                            </div>
+                                            <input type="password" name="penerbit" class="form-control" id="inputPassword3" placeholder="Penerbit">
                                         </div>
                                     </div>
                                     <div class="form-group last">
                                         <div class="col-sm-offset-3 col-sm-9">
                                             <button type="submit" class="btn btn-success btn-sm">
-                                                Sign in</button>
+                                                Cari Buku</button>
                                                  <button type="reset" class="btn btn-default btn-sm">
                                                 Reset</button>
                                         </div>
@@ -100,7 +83,7 @@
                         </div>
                     </div>
                     <div class="col-md-8 ">
-                        <legend>Pencarian Buku</legend>
+                        <legend>Hasil Pencarian</legend>
                         <table class="table table-striped">
                             <thead>
                                 <tr>

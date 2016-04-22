@@ -187,7 +187,7 @@
             </div>
             <div class="col-md-6">
                 <div class="form-group">
-                    <label class="col-lg-4 control-label">Nis</label>
+                    <label class="col-lg-4 control-label">NIM</label>
                     <div class="col-lg-7">
                         <select name="nis" class="form-control" id="nis">
                             <option></option>
@@ -199,7 +199,7 @@
                 </div>
                 
                 <div class="form-group">
-                    <label class="col-lg-4 control-label">Nama Siswa</label>
+                    <label class="col-lg-4 control-label">Nama Mahasiswa</label>
                     <div class="col-lg-7">
                         <input type="text" name="nama" id="nama" class="form-control">
                     </div>

@@ -590,5 +590,28 @@ if ( ! function_exists('_parse_attributes'))
 }
 
 
+if ( ! function_exists('anchor')){
+function anchor_img($uri = '',$img = '', $title = '', $attributes = ''){
+$title = (string) $title;
+
+if ( ! is_array($uri)){
+$site_url = ( ! preg_match('!^\w+://! i', $uri)) ? site_url($uri) : $uri;
+}
+else{
+$site_url = site_url($uri);
+}
+
+if ($title == ''){
+$title = $site_url;
+}
+
+if ($attributes != ''){
+$attributes = _parse_attributes($attributes);
+}
+
+return '&lt;a href=&quot;'.$site_url.'&quot;&gt;&lt;img src=&quot;'.base_url().'/'.$img.'&quot; border=0&gt;&lt;/a&gt;';
+}
+}
+
 /* End of file url_helper.php */
 /* Location: ./system/helpers/url_helper.php */

@@ -14,12 +14,12 @@
     <thead>
         <tr>
             <td>No.</td>
-            <td>Gambar</td>
-            <td>NIS</td>
+            <td>Foto</td>
+            <td>NIM</td>
             <td>Nama</td>
             <td>JK</td>
             <td>Tanggal Lahir</td>
-            <td>Kelas</td>
+            <td>Jurusan</td>
             <td colspan="2"></td>
         </tr>
     </thead>

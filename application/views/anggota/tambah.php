@@ -4,7 +4,7 @@
 
 <form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
     <div class="form-group">
-        <label class="col-lg-2 control-label">Nis</label>
+        <label class="col-lg-2 control-label">NIM</label>
         <div class="col-lg-5">
             <input type="text" name="nis" class="form-control">
         </div>
@@ -32,7 +32,7 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="col-lg-2 control-label">Kelas</label>
+        <label class="col-lg-2 control-label">Jurusan</label>
         <div class="col-lg-5">
             <input type="text" name="kelas" class="form-control">
         </div>

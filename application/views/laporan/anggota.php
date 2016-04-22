@@ -3,10 +3,10 @@
     <thead>
         <tr>
             <td>No.</td>
-            <td>Nis</td>
+            <td>NIM</td>
             <td>Nama</td>
             <td>Tanggal Lahir</td>
-            <td>Kelas</td>
+            <td>Jurusan</td>
         </tr>
     </thead>
     <?php $no=0; foreach($anggota as $row): $no++;?>
